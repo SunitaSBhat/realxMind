@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include('./partials/cs') %>
+   <link href="../../avat/form.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <%- include('./partials/nav') %>
+    <h1>Hurry Up Buddy Join us!!!</h1>
+    <form id="form" action="/user/form/<%= using._id %>" method="post">
+        <label>Enter the bio</label>
+        <textarea name="bio"></textarea>
+        <label>Enter your passion</label>
+        <textarea name="Passion"></textarea>
+        <label>Your age</label>
+        <input type="text" name="Age">
+        <button type="submit">Join Us</button>
+    </form>
+</body>
+<%- include('./partials/script') %>
+</html>
+   

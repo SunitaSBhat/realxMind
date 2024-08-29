@@ -1,0 +1,40 @@
+form{
+    width: 432px;
+    height: 351px;
+    border: 2px solid black;
+    margin: 61px 504px;
+    padding: 43px 12px;
+    border-radius: 40px 3px;
+    background-color: #e12fff75;
+}
+body{
+    background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+    text-align: center;
+    margin-top: 123px;
+}
+/* responsive desing of login page */
+@media only screen and (max-width:1200px){
+    .cotainer{
+        width: 100%;
+        min-height: 100vh;
+        padding-left: 3%;
+        padding-right: 3%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        text-align: center;
+        margin-top: 123px;
+    }
+}
+@media only screen and (max-width:500px){
+    form{
+        width:277px;
+    }
+}

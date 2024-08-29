@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include('./partials/cs') %>
+   <link href="../../avat/profile.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <%- include('./partials/nav') %>
+   <div class="cona">
+   <div id="us">
+      <h1><%=user.role%></h1>
+      <h2><%=user.fullname %></h3>
+      <p><%=user.email %></p>
+      <p>Account has been created at<%=user.createdAt%></p>
+      <p>Account last seen at <%=user.updatedAt%></p>
+      <a href=""><h3>Post</h3></a>
+      <h3>Tagged in</h3>
+      <h3>Comments</h3>
+      <h3>Likes</h3>
+      <h3>Followers</h3>
+      <h3>Following</h3>
+
+   </div>
+   <div class="post">
+      <h1>Have a Look at Your Posts</h1>
+      <div class="user">
+         <div class="p">
+            <% if (user.posts && Array.isArray(user.posts)) { %>
+             
+            
+            <% user.posts.forEach(element => { %>
+         <div class='posts'>
+            <div class='firstPost'>
+                <div class='userInfo'>
+                  <img src="../avat/avatar.png" id="user">
+                <div class='userName'>
+                    <h2><%= user.fullname%></h2>
+                    <p>@thebluishgirl</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical" id="dots"></i>
+                </div>
+                <h5 class="card-title" style="text-align: center;"><%= element.title %></h5>
+                <p><%=element.body%><span>Read More</span></p>
+               <div class='postWithLike'>
+                <img src="<%= element.coverImageUrl %>" id="post"/>
+                <FavoriteBorderIcon id="heart"/>
+                </div>
+                <hr/>
+                <div class='reactions'>
+                  <p>Do you want to see more post about this topic??</p>
+                  <button><a href="/user/<%= element._id %>">Open</a></button>
+            </div>
+          </div>
+         </div>
+          <% }) %>
+          <% } %>
+      </div>
+      </div>
+   </div>   
+</body>
+<%- include('./partials/script') %>
+</html>

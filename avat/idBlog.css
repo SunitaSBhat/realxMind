@@ -1,0 +1,85 @@
+.blogContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 123px;
+    width: 652px;
+    margin-left: 434px;
+}
+body{
+    background-color: rgb(74, 194, 194);
+    background-image: url("./backgrondimage.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    background-attachment: fixed;
+}
+img{
+    width: 368px;
+    height: 332px;
+    border-radius: 171px 164px;
+    border: 2px solid black;
+}
+.blogs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    background-color: transparent;
+    color:white;
+    outline:none;
+    border:none;
+}
+button{
+    background-color: #e9909f;
+    width: 100px;
+    height: 34px;
+    border-radius: 34px 34px;
+}
+.comment{
+    padding: 0px 50px;
+    font-weight:bold;
+}
+pre{
+    background-color: #e9909f;
+    height: 34px;
+    border-radius: 34px 34px;
+    margin-top:-12px;
+}
+.react{
+    display: flex;
+    flex-direction: row;
+}
+.g{
+    margin: 45px 423px;
+   
+    width: 584px;
+    height: 64px;
+    border-radius: 45px 45px;
+}
+@media only screen and (max-width:1300px){
+    body{
+        background-color: rgb(74, 194, 194);
+        background-image: url("./backgrondimage.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:white;
+        background-attachment: fixed;
+    }
+}
+@media only screen and (max-width:900px){
+    .g{
+        margin: 45px 176px;
+    }
+    
+}
+@media only screen and (max-width:549px){
+    .g{
+        margin: 45px 11px;
+        width: 305px;
+    }
+}
+

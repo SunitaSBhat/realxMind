@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+ 
+</head>
+<body>
+   
+   <div>
+    <% idBlog.forEach(idBlo => { %>
+     
+   
+   <p> <%=idBlo.title%></p>
+   <img src="<%=idBlo.coverImageUrl%>">
+   <p> <%=idBlo.body%></p>
+   <div class="social">
+   <i  id ="icon"  class="fa-regular fa-heart"></i>
+   <i  id ="icon" class="fa-solid fa-share"></i>
+   <button id="btn" type="button" click="liking()" >Subscribe</button>
+
+</div>
+
+   <% }) %>
+   </div>
+   <script content-ty="text/html" src="../avat/home.js"></script>
+</body>
+<!--  -->
+
+<script src="https://kit.fontawesome.com/07cd577cce.js" crossorigin="anonymous"></script>
+
+
+</html>

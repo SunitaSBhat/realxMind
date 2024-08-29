@@ -1,0 +1,46 @@
+form{
+    width: 432px;
+    height: 537px;
+    border: 2px solid black;
+    margin: 61px 504px;
+    padding: 43px 12px;
+    border-radius: 40px 3px;
+    background-color: pink;
+}
+h1{
+    text-align: center;
+    margin-top: 123px;
+}
+body{
+    background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width:1400px){
+    body{
+    background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+    }
+    .cotain{
+        margin-top: -139px;
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 3%;
+        padding-right: 17%;
+    }
+}
+@media only screen and (max-width:500px){
+    .cotain{
+        margin-top:-179px;
+    }
+    form{
+        width:277px;
+    }
+}

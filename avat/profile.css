@@ -1,0 +1,143 @@
+#us{
+    width:500px;
+    height: 800px;
+    background-color: #262626bf;
+    color:white;
+    padding:12px 12px;
+}
+ h3{
+    margin:49px 0px;
+}
+a{
+text-decoration: none;
+color:white;
+}
+.cona{
+    display: flex;
+    flex-direction: row;
+    margin: 97px 7px;
+}
+h1{
+    text-align: center;
+    margin: 12px 100px;
+}
+/*posts style*/
+.posts{
+    background-color: black;
+    color: white;
+    width: 893px;
+    height: 716px;
+    margin: 20px 4px;
+    border-radius: 12px 12px;
+    padding: 17px 97px;
+}
+.p{
+    margin-top: 124px;
+    position: relative;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+    width:753px;
+    margin-top:23px;
+}
+.userInfo{
+    display: flex;
+    flex-direction: row;
+}
+#dots{
+    margin-left:64px;
+}
+.userName{
+    margin-left: 35px;
+    position: relative;
+    top: -28px;
+    margin-right: 364px;
+    display: flex;
+    flex-direction: column;
+}
+
+.middleOne{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.userName p{
+  margin:-14px 0px;
+}
+.card-title{
+    margin:12px 0px;
+    font-size: 23px;
+}
+#post{
+    width: 739px;
+    height: 364px;
+}
+#us{
+    width: 422px;
+    height: 986px;
+    margin-top: -21px;
+}
+#heart{
+    position: relative;
+    top: -243px;
+    left: -46px;
+    color: white;
+}
+body{
+    background-image: url("backgrondimage.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.reactions{
+    display: flex;
+    flex-direction: row;
+}
+.reactions p{
+    font-size: 20px;
+}
+button{
+    border-radius: 12px 12px;
+    background-color: hotpink;
+    margin:0px 34px;
+}
+button a{
+    text-decoration: none;
+    color:white;
+}
+.yes{
+    margin:0px 12px;
+}
+.firstPost{
+    padding:12px 0px;
+}
+@media only screen and (max-width:1368px){
+    .posts{
+        margin-left: -237px;
+    }
+}
+@media only screen and (max-width:1368px){
+.posts{
+    width: 642px;
+    margin-left: 193px;
+}
+#post{
+    width: 447px;
+}
+button{
+    width: 126px;
+}
+#dots{
+    margin-left: -51px;
+}
+}
+/* user profile navbar responsive */
+@media only screen and (max-width:1355px){
+    #us{
+        display: none;
+    }
+}

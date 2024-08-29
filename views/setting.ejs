@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include('./partials/cs') %>
+   <link href="../../avat/setting.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <%- include('./partials/nav') %>
+    <div class="contain">
+     
+   
+        <form id="form" action="/user/setting" method="post">
+            <label>Change UserName</label>
+            <input type="text" value="<%= use.fullname %>"name="fullname" id="fullname">
+            <label>Change email</label>
+            <input type="text" value="<%= use.email %>" name="email">
+            <label>Change the bio</label>
+            <textarea></textarea>
+            <label>Change your passion</label>
+            <textarea></textarea>
+            <label>Change the age</label>
+            <input type="text">
+            <button type="submit">Join Us</button>
+        </form>
+      
+    </div>
+         
+    
+     
+     
+</body>
+<%- include('./partials/script') %>
+</html>

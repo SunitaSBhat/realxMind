@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include('./partials/cs') %>
+   <link rel="stylesheet" href="../avat/addblog.css">
+</head>
+<body>
+  <%- include('./partials/nav') %>
+  <div class="cotain">
+  <h1>Add Your Blog</h1>
+    <form action="/user/addblog" method="POST" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+            <input class="form-control"name="coverImageUrl" type="file" id="formFileMultiple" multiple>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">username</label>
+            <textarea class="form-control" name="username" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input type="text" class="form-control" name="title" id="exampleFormControlInput1" >
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Little Explanation</label>
+        <input type="text" class="form-control" name="explain" id="exampleFormControlInput1" >
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">description</label>
+        <textarea class="form-control" name="body" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+<%- include('./partials/script') %>
+</html>

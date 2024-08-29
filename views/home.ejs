@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include('./partials/cs') %>
+  <link rel="stylesheet" href="../avat/home.css">
+</head>
+<body>
+   <%- include('./partials/nav') %>
+   <%- include('./sideNav') %>
+   <div class="p">
+      <% blogs.forEach(element => { %>
+   <div class='posts'>
+      <div class='firstPost'>
+          <div class='userInfo'>
+            <img src="../avat/avatar.png" id="user">
+          <div class='userName'>
+              <h2><%= element.username %></h2>
+              <p>@thebluishgirl</p>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical" id="dots"></i>
+          </div>
+          <h5 class="card-title" style="text-align: center;"><%= element.title %></h5>
+          <p><%=element.body%><span>Read More</span></p>
+         <div class='postWithLike'>
+          <img src="<%= element.coverImageUrl %>" id="post"/>
+          <FavoriteBorderIcon id="heart"/>
+          </div>
+          <hr/>
+          <div class='reactions'>
+            <p>Do you want to see more post about this topic??</p>
+            <button><a href="/user/<%= element._id %>">Open</a></button>
+      </div>
+    </div>
+   </div>
+    <% }) %>
+   
+</div>
+</body>
+<%- include('./partials/script') %>
+<script src="../avat/home.js"></script>
+</html>
