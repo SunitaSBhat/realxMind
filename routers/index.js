@@ -45,8 +45,8 @@ router.post("/signup", async(req, res)=>{
     return res.cookie("token", token).redirect("/user/addblog")
     }
     catch(error){
-        return res.render("signup", {
-            error:"invalid username or password"
+        return res.render("signin", function(){
+          console.log("wrong password")
         }
         )}
 })

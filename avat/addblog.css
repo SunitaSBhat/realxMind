@@ -1,11 +1,23 @@
 form{
     width: 432px;
-    height: 537px;
+    height: 651px;
     border: 2px solid black;
     margin: 61px 504px;
     padding: 43px 12px;
     border-radius: 40px 3px;
-    background-color: pink;
+    background-color: black;
+}
+.btn{
+    background-color: white;
+    color: black;
+}
+.form-label {
+   
+    color: #ffffffb5;
+}
+.form-control{
+    background: transparent !important;
+    color:white;
 }
 h1{
     text-align: center;
