@@ -18,7 +18,7 @@ body{
 img{
     width: 368px;
     height: 332px;
-    border-radius: 171px 164px;
+    border-radius: 12px 12px;
     border: 2px solid black;
 }
 .blogs{
@@ -48,6 +48,15 @@ pre{
     height: 34px;
     border-radius: 34px 34px;
     margin-top:-12px;
+    display: flex;
+    flex-direction: row;
+   
+    padding: 5px 25px !important;
+}
+i{
+    margin-left:382px;
+    margin-right:12px;
+    margin-top:5px;
 }
 .react{
     display: flex;

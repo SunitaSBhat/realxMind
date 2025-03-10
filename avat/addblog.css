@@ -2,10 +2,10 @@ form{
     width: 432px;
     height: 651px;
     border: 2px solid black;
-    margin: 61px 504px;
+    margin: 61px 520px;
     padding: 43px 12px;
     border-radius: 40px 3px;
-    background-color: black;
+    background-color: transparent;
 }
 .btn{
     background-color: white;
@@ -16,12 +16,12 @@ form{
     color: #ffffffb5;
 }
 .form-control{
-    background: transparent !important;
-    color:white;
+    color: black;
+    background-color: transparent;
 }
 h1{
     text-align: center;
-    margin-top: 123px;
+    margin-top: 119px;
 }
 body{
     background-image: url("./background.jpg");
@@ -30,10 +30,15 @@ body{
 }
 @media only screen and (max-width:1400px){
     body{
-    background-image: url("./background.jpg");
+   
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+    }
+    h1{
+        text-align: center;
+        margin-top: 279px;
+        margin-bottom: -41px;
     }
     .cotain{
         margin-top: -139px;

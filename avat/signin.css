@@ -7,6 +7,9 @@ form{
     border-radius: 40px 3px;
     background-color: transparent;
 }
+video::-webkit-media-controls {
+    display: none !important;
+  }
 .video-background {
     position: fixed;
     top: 0;

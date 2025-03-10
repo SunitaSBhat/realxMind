@@ -1,8 +1,34 @@
 .show{
     display: none;
 }
-@media only screen and (max-width:1400px){
+.navbar-nav{
+    margin-left:100px;
+    border:2px solid black;
+    border-radius: 12px 12px;
+    background-color: black;
+    padding :12px 12px
+}
+
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex
+;
+justify-content: normal;
+    flex-wrap: inherit;
+    align-items: center;
+}
+.navbar{
+    width:100%;
+}
+.navbar-toggler{
+margin-left:100px
+}
+collapse:not(.show) {
+    display: flex;
+}
+@media only screen and (max-width:1368px){
     .show{
         display: flex;
     }
 }
+

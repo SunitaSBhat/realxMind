@@ -7,6 +7,12 @@
     border-radius: 12px 12px;
     padding: 17px 97px;
 }
+*{
+    margin:0px 0px;
+    padding:0px 0px;
+    box-sizing: border-box;
+}
+
 .p{
     margin-top: 124px;
     position: relative;
@@ -53,9 +59,11 @@ hr{
     height: 364px;
 }
 #user{
+   
     width: 48px;
     height: 48px;
     margin-top: -21px;
+    border-radius: 33px 33px;
 }
 #heart{
     position: relative;
@@ -83,7 +91,9 @@ button{
 }
 button a{
     text-decoration: none;
-    color:white;
+    color: white;
+    width: 57px;
+    display: block;
 }
 .yes{
     margin:0px 12px;

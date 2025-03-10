@@ -11,15 +11,22 @@
     <div id="co1">
         <div class='belowNav'>
           <ul id="ul">
-            <li class="li"><i class="fa-solid fa-house"></i><a href="./home.ejs">Home</a></li>
-            <li  class="li"><i class="fa-regular fa-bell"></i><a href="./profile.ejs">Notifications</a></li>
-            <li  class="li"><i class="fa-solid fa-cart-shopping"></i><a href="./home.ejs">Explore</a></li>
-            <li  class="li"><i class="fa-regular fa-envelope"></i>Conversation</li>
-            <li  class="li"><i class="fa-solid fa-wallet"></i>Wallet</li>
-            <li  class="li"><i class="fa-solid fa-dollar-sign"></i>Subscription</li>
-            <li  class="li"><i class="fa-regular fa-user"></i>My profile</li>
-            <li  class="li"><i class="fa-solid fa-gear"></i>Settings</li>
+            <li class="li"><i class="fa-solid fa-house"></i><a href="/">Home</a></li>
+           
+            <li  class="li"><i class="fa-solid fa-users-line"></i><a href="./home.ejs">Connect</a></li>
+            <% if(locals.user) { %>
+              <li  class="li"><i class="fa-regular fa-address-card"></i><a href="/user/form/<%= user._id %>">Blogs by you!</a></li>
+            <li  class="li"><i class="fa-solid fa-user-pen"></i><a href="/user/form/<%= user._id %>">Edit Profile</a></li>
+            <li  class="li"><i class="fa-regular fa-user"></i><a href="/user/form/<%= user._id %>">My profile</a></li>
+            
             <li id="logout" class="li"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</li>
+          
+            <% } else { %>
+            <li  class="li"><i class="fa-regular fa-address-card"></i><a href="/user/signin">Blogs by you!</a></li>
+            <li  class="li"><i class="fa-solid fa-user-pen"></i><a href="/user/signin">Edit Profile</a></li>
+            <li  class="li"><i class="fa-regular fa-user"></i><a href="/user/signin">My profile</a></li>
+           
+            <% } %>
           </ul>
           <div class='lastWords'>
             <p>2022©logo name</p>

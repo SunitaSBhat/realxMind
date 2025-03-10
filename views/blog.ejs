@@ -28,11 +28,9 @@
             <% comment.forEach(Comment => { %>
                 <div class="g">
               <p  class="comment"><%=Comment.createdBy.fullname%></p>
-            <pre  class="comment"><%= Comment.contents %></pre>
-            <div class="react">
-                <i class="fa-regular fa-heart"></i>
-                <p>Reply</p>
-            </div>
+            <pre  class="comment"><%= Comment.contents %>  <i class="fa-regular fa-heart"></i>
+                <p>Reply</p></pre>
+            
         </div>
         </div>
             <% }) %>

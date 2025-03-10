@@ -35,7 +35,7 @@ router.post("/signin", async(req, res)=>{
     console.error('Error creating user:', error);
 }
 
-return res.json("user created");
+return res.render("signup");
 });
 router.post("/signup", async(req, res)=>{
     const {email, password} = req.body;
@@ -45,11 +45,13 @@ router.post("/signup", async(req, res)=>{
     return res.cookie("token", token).redirect("/user/addblog")
     }
     catch(error){
-        return res.render("signin", function(){
-          console.log("wrong password")
-        }
-        )}
-})
+        res.send(`
+            <script>
+              alert("Your Password or Email might be wrong");
+              window.location.href = "http://localhost:8000/user/signup";
+            </script>
+          `);
+}})
 router.get("/logout", (req, res)=>{
     res.clearCookie("token").redirect("/")
 })
