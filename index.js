@@ -9,12 +9,22 @@ const {checkloggedinUser}= require("./middleware/index");
 const cookieParser=require("cookie-parser")
 const userRouter = require("./routers/index");
 const PORT = process.env.PORT || 8000;
-mongoose.connect( "mongodb://127.0.0.1:27017/blogify") .then(() => {
-    console.log("Mongoose connected");
-})
-.catch((error) => {
-    console.error("Mongoose connection error:", error);
-});
+ mongoose.connect(process.env.MONGO_URL, {
+
+    useNewUrlParser: "true",
+    useUnifiedTopology: "true"
+  
+  })
+  mongoose.connection.on("error", err => {
+  
+    console.log("err", err)
+  
+  })
+  mongoose.connection.on("connected", (err, res) => {
+  
+    console.log("mongoose is connected")
+  
+  })
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
 app.use(express.urlencoded({ extended: true }));

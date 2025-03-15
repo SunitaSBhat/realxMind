@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
-const secret = "rampalYadav123";
+const dotenv=require("dotenv").config();
+const secret = process.env.JWT_SECRET;
 function createToken(user){
     const payload = {
         _id:user._id,

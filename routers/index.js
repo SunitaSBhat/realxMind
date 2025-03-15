@@ -51,6 +51,7 @@ router.post("/signup", async(req, res)=>{
               window.location.href = "http://localhost:8000/user/signup";
             </script>
           `);
+         
 }})
 router.get("/logout", (req, res)=>{
     res.clearCookie("token").redirect("/")
